@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(to top, green,pink, black);
+}
+
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+/* navbar designs start here */
+.nav-logo {
+    text-align: left;
+}
+.nav-logo img{
+    width: 150px;
+    height: 150px;
+}
+.nav-heading h1{
+    text-align: right;
+}
+[class*="col-"]{
+    float:left;
+    padding:1%;
+}
+.navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar-menu a{
+    color:yellow;
+    padding: 10px 10px;
+    margin: 10px 5px;
+    border-radius: 20px;
+    border-style:inset;
+    background-color: transparent;
+}
+/* navbar designs end */
+
+/* profile designs start here */
+main {
+    padding:2% 2%;
+    position: relative;
+    text-align: center;
+    height:auto;
+}
+main .profile .top1-icon{
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    position: absolute;
+    margin-top:0.7%;
+    margin-left: 0.5%;
+    padding:15px 10px;
+    animation-name: top1-icon;
+    animation-duration: 7s;  
+    animation-play-state:running;
+    animation-iteration-count: infinite;
+    animation-fill-mode:both;
+  }
+  @keyframes top1-icon {
+    0%  {top:0px; left:0px;}
+   35%  {right:310px; top:0px;}
+   70%  {left: 310px; top:0px;}
+   100% {left:0px; top:0px;} 
+ } 
+main .profile-desc {
+    color: aqua;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    width: 50%;
+    margin-left: 25%;
+}
+main .profile-desc .neon {
+    background:transparent;
+    font-size: 1.2em;
+    border:3px solid aqua;
+    border-radius: 30px;
+    overflow: hidden;
+    width:100%;
+    letter-spacing: 0.2em;
+    color:aqua;
+    box-shadow:0 0 60px aqua;
+    position:relative;
+}
+main .profile-desc p{
+    color:rgb(247, 244, 244);
+    font-size: 1.2rem;
+    padding:5px;
+    width: 100%;
+}
+main .profile-desc .right-icon{
+    height: 125px;
+    width: 125px;
+    background: transparent;
+    transition: width 2s, transform 5s;
+}
+.profile .right-icon:hover{
+    width: 140px;
+}
+main .profile .typing{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color:white;
+        margin-top: 1.5%;
+    }
+.profile::after{
+    content: '';
+    display:table;
+    clear: both;
+}
+.typing::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+main::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+
+/* profile designs end */
+/* about me design start here */
+.aboutme-image{
+    margin-top: 100px;
+}
+.about-me h2{
+    font-size:1.5em;
+    font-weight: 1000;
+}
+.dotted-hr{
+    border: dotted 10px white;
+    border-bottom: none;
+    width: 10%;
+}
+.aboutme-image img{
+    height: 300px;
+    width: 250px;
+    }
+    .aboutme-desc p{
+        text-align: left;
+        font-size:larger;
+    }
+    /* about me design end here */
+    /* Professional experience design start here */
+.professional-experience{
+    padding: 1% 2%;
+}
+/* Professional experience design ends here */
+/* achievement start here */
+.achievement-contact p{
+    font-size: 1rem;
+}
+.achievement{
+    text-align: center;
+}
+.contact button{
+    width: 120px;
+}
+.contact-links{
+    position: relative;
+}
+.media-buttons .btn{
+    border: none;
+    border-radius: 15px;
+    font-size: 30px;
+    padding: 8px auto;
+    margin:30px;
+    width: 50px; 
+}
+/* achievement end here
+
+/* footer start from here */
+.footer-menu{
+    margin-top:12px;
+}
+.footer-menu a{
+    display: inline;
+    margin: 12px;
+    padding:15px;
+}
+/* footer ends here */
+
+
+
+
